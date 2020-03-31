@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Grid</title>
+    <link rel="stylesheet" href="diamonds.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="diamond-grid">
+        <div class="item"><a href="img/img-1.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-1.jpg"></a></div>
+        <div class="item"><a href="img/img-2.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-2.jpg"></a></div>
+        <div class="item"><a href="img/img-3.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-3.jpg"></a></div>
+        <div class="item"><a href="img/img-4.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-4.jpg"></a></div>
+        <div class="item"><a href="img/img-5.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-5.jpg"></a></div>
+        <div class="item"><a href="img/img-6.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-6.jpg"></a></div>
+        <div class="item"><a href="img/img-7.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-7.jpg"></a></div>
+        <div class="item"><a href="img/img-8.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-8.jpg"></a></div>
+        <div class="item"><a href="img/img-9.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-9.jpg"></a></div>
+        <div class="item"><a href="img/img-10.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-10.jpg"></a></div>
+        <div class="item"><a href="img/img-11.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-11.jpg"></a></div>
+        <div class="item"><a href="img/img-12.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-12.jpg"></a></div>
+        <div class="item"><a href="img/img-13.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-13.jpg"></a></div>
+        <div class="item"><a href="img/img-14.jpg" data-lightbox="mygallery" data-title="Nature"><img src="img/img-14.jpg"></a></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="jquery.diamonds.js"></script>
+    <script type="text/javascript">
+        $(".diamond-grid").diamonds({
+        size : 220, 
+        gap : 5, 
+        hideIncompleteRow : false,
+        autoRedraw : true, 
+        itemSelector : ".item" });
+    </script>
+</body>
+</html>
